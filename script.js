@@ -18,22 +18,22 @@ buttonCheckAnswers.addEventListener('click', () => {
         correctAnswersCount++;
     } else {
         if(input_q1.value === '') {
-            incorrectAnswers.push('Нет ответа');
+            incorrectAnswers.push('1. '+'Нет ответа');
         } else {
-            incorrectAnswers.push(input_q1.value);
+            incorrectAnswers.push('1. '+input_q1.value);
         }
     }
 
     if(radiobutton_q2.checked) {
         correctAnswersCount++;
     } else {
-        incorrectAnswers.push('Да');
+        incorrectAnswers.push('2. '+'Да');
     }
 
-    if(select_q3.value === 'var4') {
+    if(select_q3.value === 'var5') {
         correctAnswersCount++;
     } else {
-        incorrectAnswers.push(select_q3.options[select_q3.selectedIndex].text);
+        incorrectAnswers.push('3. '+select_q3.options[select_q3.selectedIndex].text);
     }
 
     let incorrectCheckboxes = [];
@@ -50,18 +50,18 @@ buttonCheckAnswers.addEventListener('click', () => {
     if(incorrectCheckboxes.length === 0) {
         incorrectCheckboxes.push('Нет ответа')
     }
-    incorrectAnswers.push(incorrectCheckboxes.join(', '))
+    incorrectAnswers.push('4. '+incorrectCheckboxes.join(', '))
 
     if(number_q5.value == 1) {
         correctAnswersCount++;
     } else {
-        incorrectAnswers.push(number_q5.value);
+        incorrectAnswers.push('5. '+number_q5.value);
     }
 
     if(date_q6.value == '2014-10-28') {
         correctAnswersCount++;
     } else {
-        incorrectAnswers.push(date_q6.value);
+        incorrectAnswers.push('6. '+date_q6.value);
     }
 
     if(incorrectAnswers.length === 0) {
