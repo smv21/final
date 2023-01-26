@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест по веб-технологиям</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Тест по веб-технологиям</h1>
+    <div class="test">
+        <form action="" class="form">
+            <div class="wrapper-form">
+                <div class="wrapper">
+                    <div class="question">
+                        <div class="question-text">
+                            <b>1.</b> Как расшифровывается HTML?
+                        </div>
+                        <input type="text" placeholder="Введите ответ" class="text" id="q1">
+                    </div>
+
+                    <div class="question">
+                        <div class="question-text">
+                            <b>2.</b> Все тэги в HTML одиночные?
+                        </div>
+                        <div class="radiobuttons">
+                            <div><input type="radio" name="tags">Да</div>
+                            <div><input type="radio" name="tags" id="q2">Нет</div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-text">
+                            <b>3.</b> Какая последняя версия HTML?
+                        </div>
+                        <select id="q3" class="select">
+                            <option value="var1">HTML1</option>
+                            <option value="var2">HTML 2.0</option>
+                            <option value="var3">HTML 4.01</option>
+                            <option value="var4">HTML5</option>
+                            <option value="var5">HTML 5.3</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="wrapper">
+                    <div class="question">
+                        <div class="question-text">
+                            <b>4.</b> Выберите семантические тэги:
+                        </div>
+                        <div class="checkboxes">
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="semantic" id="q4_1">
+                                    <label for="q4_1">article</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="semantic" id="q4_2">
+                                    <label for="q4_2">div</label>
+                                </div>
+                            </div>
+                            <div class="checkbox-wrapper">
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="semantic" id="q4_3">
+                                    <label for="q4_3">p</label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" name="semantic" id="q4_4">
+                                    <label for="q4_4">header</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-text">
+                            <b>5.</b> У скольких элементов на одной странице может быть id со значением "element1"?
+                        </div>
+                        <input type="number" id="q5" min="0" max="3" class="number" value="0">
+                    </div>
+
+                    <div class="question">
+                        <div class="question-text">
+                            <b>6.</b> Дата публикации HTML5?
+                        </div>
+                        <input type="date" id="q6" class="date" value="2023-01-01">
+                    </div>
+
+                </div>
+            </div>
+        </form>
+        <button class="send-button">Отправить</button>
+        <div class="results"></div>
+    </div>
+    <a href="/index.html" class="back">Назад</a>
+</body>
+</html>
+<script src="script.js"></script>

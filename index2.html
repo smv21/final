@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Регистрация участников конференции</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="form-wrapper">
+        <h1>
+            Форма регистрации участников конференции
+        </h1>
+        <form action="" class="form-conference">
+            <div class="fields">
+                <div class="field">
+                    <div class="field-text">ФИО</div>
+                    <input type="text" name="name" placeholder="ФИО">
+                </div>
+                <div class="field">
+                    <div class="field-text">Контактный телефон</div>
+                    <input type="tel" name="phone" placeholder="Телефон">
+                </div>
+                <div class="field">
+                    <div class="field-text">Электронная почта</div>
+                    <input type="email" name="email" placeholder="Электронная почта">
+                </div>
+                <div class="field">
+                    <div class="field-text">Список секций конференции</div>
+                    <select>
+                        <option>Математика</option>
+                        <option>Физика</option>
+                        <option>Информатика</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <div class="field-text">Дата рождения</div>
+                    <input type="text" name="date" placeholder="Дата рождения">
+                </div>
+                <div class="field">
+                    <div class="field-text">Доклад</div>
+                    <input type="radio" value="no" checked name="report"/>Нет
+                    <input type="radio" value="yes" name="report"/>Есть
+                </div>
+                <div class="field report-title hidden">
+                    <div class="field-text">Тема доклада</div>
+                    <input type="text" name="title" placeholder="Тема доклада">
+                </div>
+            </div>
+            <button class="send-btn">Зарегистрироваться</button>
+        </form>
+    </div>
+    <a href="/index.html" class="back">Назад</a>
+</body>
+</html>
+<script src="script2.js"></script>
